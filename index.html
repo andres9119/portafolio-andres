@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andres Bateca - Desarrollador Django | Portafolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Desarrollador Django especializado en aplicaciones web robustas y escalables. Experto en Python, Django REST Framework y desarrollo backend.">
+    <meta name="keywords" content="Django, Python, Desarrollador Web, Backend, API REST, PostgreSQL, Desarrollador Django">
+    <meta name="author" content="Andres Bateca">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Andres Bateca - Desarrollador Django">
+    <meta property="og:description" content="Desarrollador Django especializado en aplicaciones web robustas y escalables">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-dominio.com">
+    <meta property="og:image" content="https://tu-dominio.com/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Andres Bateca - Desarrollador Django">
+    <meta name="twitter:description" content="Desarrollador Django especializado en aplicaciones web robustas y escalables">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4f46e5">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- External Libraries -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Andres Bateca",
+        "jobTitle": "Desarrollador Django",
+        "description": "Desarrollador Django especializado en aplicaciones web robustas y escalables",
+        "url": "https://tu-dominio.com",
+        "sameAs": [
+            "https://github.com/tu-usuario",
+            "https://linkedin.com/in/tu-perfil"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" title="Cambiar tema">🌙</button>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <span class="nav__logo-text">Django Dev</span>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre Mí</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Habilidades</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="nav__close-icon">✕</i>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="nav__toggle-icon">☰</i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Home Section -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Hola, soy <span class="home__title-color">Andres Bateca</span>
+                        </h1>
+                        <h2 class="home__subtitle">Desarrollador Django</h2>
+                        <p class="home__description">
+                            Especializado en crear aplicaciones web robustas y escalables con Django. 
+                            Transformo ideas en soluciones digitales eficientes y de alta calidad.
+                        </p>
+                        
+                        <div class="home__buttons">
+                            <a href="#contact" class="button button--primary">
+                                Contáctame
+                            </a>
+                            <a href="#projects" class="button button--secondary">
+                                Ver Proyectos
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="home__social">
+                        <a href="https://github.com/andres9119" class="home__social-icon" target="_blank" rel="noopener" title="GitHub">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/andres-bateca-5301b3274/" class="home__social-icon" target="_blank" rel="noopener" title="LinkedIn">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/573178808080" class="home__social-icon" target="_blank" rel="noopener" title="WhatsApp">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:andres-bateca@hotmail.es" class="home__social-icon" title="Email">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.91L12 10.09l9.455-6.269h.909c.904 0 1.636.732 1.636 1.636z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Imagen removida del home para mejor balance visual -->
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section class="about section" id="about">
+          <h2 class="section__title">Sobre Mí</h2>
+          <span class="section__subtitle">Perfil profesional</span>
+          <div class="about__container container grid">
+            <div class="about__img">
+              <img src="assets/images/profile/profile-photo.jpg" alt="Andres Bateca" class="about__img-pic">
+            </div>
+            <div class="about__data">
+              <p class="about__description">
+                <strong>Desarrollador Django y Analista de Datos</strong><br>
+                Técnico en telecomunicaciones con sólida experiencia en desarrollo web backend, análisis de datos y administración de sistemas. Especializado en el desarrollo de aplicaciones robustas con Django y Django REST Framework, así como en la gestión y optimización de bases de datos relacionales (MySQL). Apasionado por la automatización, la eficiencia operativa y la entrega de soluciones tecnológicas que aportan valor real a las organizaciones.<br>
+                Manejo avanzado de Python (incluyendo Numpy, Pandas, Matplotlib), HTML, CSS, JavaScript, Bootstrap y control de versiones con Git/GitHub. Experiencia en soporte técnico, administración de inventarios y capacitación de usuarios. Comprometido con el aprendizaje continuo y la mejora constante.
+              </p>
+              <div class="about__buttons">
+                <a download href="assets/pdf/CV.pdf" class="button button--primary">Descargar CV</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- STACK TECNOLÓGICO -->
+        <section class="skills section" id="skills">
+          <h2 class="section__title">Stack Tecnológico</h2>
+          <span class="section__subtitle">Tecnologías principales</span>
+          <div class="skills__container container grid stack-groups-grid">
+            <div class="stack-group-card">
+              <h3>Backend & Data</h3>
+              <div class="stack-logos">
+                <img src="assets/images/icons/django.png" alt="Django" title="Django">
+                <img src="assets/images/icons/python.png" alt="Python" title="Python">
+                <img src="assets/images/icons/pandas.png" alt="Pandas" title="Pandas">
+                <img src="assets/images/icons/numpy.png" alt="NumPy" title="NumPy">
+                <img src="assets/images/icons/matplotlib.png" alt="Matplotlib" title="Matplotlib">
+                <img src="assets/images/icons/mysql.png" alt="MySQL" title="MySQL">
+                <img src="assets/images/icons/matlab.png" alt="Matlab" title="Matlab">
+              </div>
+            </div>
+            <div class="stack-group-card">
+              <h3>Frontend</h3>
+              <div class="stack-logos">
+                <img src="assets/images/icons/html.png" alt="HTML" title="HTML">
+                <img src="assets/images/icons/css.png" alt="CSS" title="CSS">
+                <img src="assets/images/icons/js.png" alt="JavaScript" title="JavaScript">
+                <img src="assets/images/icons/bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                <img src="assets/images/icons/react.png" alt="React" title="React">
+              </div>
+            </div>
+            <div class="stack-group-card">
+              <h3>Herramientas</h3>
+              <div class="stack-logos">
+                <img src="assets/images/icons/git.png" alt="Git" title="Git">
+                <img src="assets/images/icons/github.png" alt="GitHub" title="GitHub">
+                <img src="assets/images/icons/vs-code.png" alt="VS Code" title="VS Code">
+                <img src="assets/images/icons/visual-studio.png" alt="Visual Studio" title="Visual Studio">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EDUCACIÓN Y CURSOS (Acordeón) -->
+        <section class="education section" id="education">
+          <h2 class="section__title">Educación</h2>
+          <span class="section__subtitle">Formación académica y certificaciones</span>
+          <div class="education__container container grid">
+            <div class="accordion">
+              <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Formación académica</button>
+                <div class="accordion-content">
+                  <ul class="education__list">
+                    <li><strong>Ingeniería en Telecomunicaciones</strong> (En curso) — UNAD, Cúcuta</li>
+                    <li><strong>Tecnólogo en Telecomunicaciones</strong> — SENA, 2017</li>
+                    <li><strong>Análisis y Desarrollo de Software</strong> (En curso) — SENA, 2023</li>
+                    <li><strong>Bachiller Técnico Comercial</strong> — Instituto Pedagógico Santander, 2003</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header" type="button" aria-expanded="false">Cursos y Certificados</button>
+                <div class="accordion-content">
+                  <ul class="education__list">
+                    <li>Variables y estructuras de control en Python — SENA, 2023</li>
+                    <li>Certificación HTML y CSS — OpenBootcamp</li>
+                    <li>Django — OpenBootcamp</li>
+                    <li>Matlab Onramp — MathWorks Academy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section class="experience section" id="experience">
+          <h2 class="section__title">Experiencia</h2>
+          <span class="section__subtitle">Trayectoria profesional</span>
+          <div class="experience__container container grid">
+            <div class="experience__item">
+              <h3>Fundación de Gestión Social - FUGES</h3>
+              <p class="experience__role">Auxiliar de Sistemas <span class="experience__date">(Jul 2024 — Feb 2025)</span></p>
+              <ul>
+                <li>Soporte técnico a usuarios internos y mantenimiento de equipos.</li>
+                <li>Gestión y configuración de redes LAN.</li>
+                <li>Capacitación en herramientas informáticas y seguridad digital.</li>
+                <li>Gestión de inventario tecnológico.</li>
+              </ul>
+              <p class="experience__role">Asistente de Base de Datos y Administración de Inventario <span class="experience__date">(Ago 2022 — Dic 2023)</span></p>
+              <ul>
+                <li>Optimización de bases de datos e implementación de procedimientos automatizados.</li>
+                <li>Mantenimiento de registros y control de inventarios.</li>
+                <li>Apoyo en consultas y solicitudes de datos.</li>
+              </ul>
+            </div>
+            <div class="experience__item">
+              <h3>Energía Integral Andina</h3>
+              <p class="experience__role">Auxiliar de Instalaciones <span class="experience__date">(Ene 2017 — Dic 2017)</span></p>
+              <ul>
+                <li>Instalación y configuración de servicios de telecomunicaciones (Tigo).</li>
+                <li>Diagnóstico y mantenimiento preventivo/correctivo.</li>
+              </ul>
+            </div>
+            <div class="experience__item">
+              <h3>OPEGIN</h3>
+              <p class="experience__role">Técnico de Aprovisionamiento y Mantenimiento <span class="experience__date">(Mar 2010 — Jul 2015)</span></p>
+              <ul>
+                <li>Implementación y mantenimiento de servicios de Movistar.</li>
+                <li>Diagnóstico y resolución de problemas técnicos.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section class="skills section" id="habilidades">
+          <h2 class="section__title">Habilidades</h2>
+          <span class="section__subtitle">Lo que sé hacer</span>
+          <div class="skills__chips-container">
+            <span class="skill-chip">Desarrollo backend con Django y Django REST Framework</span>
+            <span class="skill-chip">Análisis y visualización de datos con Python (Pandas, Numpy, Matplotlib)</span>
+            <span class="skill-chip">Desarrollo web con HTML, CSS, JavaScript y Bootstrap</span>
+            <span class="skill-chip">Administración y optimización de bases de datos MySQL</span>
+            <span class="skill-chip">Control de versiones con Git y GitHub</span>
+            <span class="skill-chip">Soporte técnico y capacitación a usuarios</span>
+            <span class="skill-chip">Instalación y mantenimiento de redes y sistemas de telecomunicaciones</span>
+          </div>
+        </section>
+
+        <!-- (Opcional) PROYECTOS DESTACADOS -->
+        <section class="portfolio section" id="projects">
+          <h2 class="section__title">Proyectos Destacados</h2>
+          <span class="section__subtitle">Algunos trabajos y prácticas</span>
+          <div class="portfolio__container container">
+            <div class="portfolio__content django web">
+              <img src="assets/images/projects/project-1.jpg" alt="EntrenaPro - Plataforma web para gimnasio" class="portfolio__img">
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  <a href="https://entrenaprocucuta.pythonanywhere.com/" target="_blank" rel="noopener">
+                    EntrenaPro: Plataforma web para gimnasio
+                  </a>
+                </h3>
+                <p class="portfolio__description">
+                  Sitio web profesional para el gimnasio EntrenaPro en Cúcuta. Permite mostrar clases, planes, instructores, testimonios y blog. Incluye panel de administración, registro de usuarios y gestión de contenido. Desarrollado con Django, MySQL, HTML, CSS y JavaScript.
+                </p>
+                <div class="portfolio__technologies">
+                  <span class="portfolio__tech">Django</span>
+                  <span class="portfolio__tech">MySQL</span>
+                  <span class="portfolio__tech">HTML</span>
+                  <span class="portfolio__tech">CSS</span>
+                  <span class="portfolio__tech">JavaScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__content api">
+              <img src="assets/images/projects/project-2.jpg" alt="Portafolio profesional Django" class="portfolio__img">
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  Portafolio profesional como Desarrollador Django
+                </h3>
+                <p class="portfolio__description">
+                  Este portafolio web moderno y responsivo, desarrollado desde cero, presenta mi perfil profesional, stack tecnológico, experiencia, proyectos y contacto. Incluye modo oscuro, animaciones, validación de formularios, accesibilidad y es instalable como PWA.
+                </p>
+                <div class="portfolio__technologies">
+                  <span class="portfolio__tech">HTML</span>
+                  <span class="portfolio__tech">CSS</span>
+                  <span class="portfolio__tech">JavaScript</span>
+                  <span class="portfolio__tech">PWA</span>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__content django web">
+              <img src="assets/images/projects/project-3.jpg" alt="Script de depuración y análisis de datos en Pandas" class="portfolio__img">
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  <a href="https://colab.research.google.com/drive/1o3rNSeGYhacMbCU2n53rdCdgyV-It2C9?usp=sharing" target="_blank" rel="noopener">
+                    Script de depuración y análisis de datos en Pandas (Salud Norte de Santander)
+                  </a>
+                </h3>
+                <p class="portfolio__description">
+                  Script en Google Colab para la Secretaría de Salud de Norte de Santander. Automatiza la depuración, filtrado y consolidación de registros en archivos Excel, aplicando reglas de negocio y criterios avanzados para identificar duplicados y priorizar información relevante. Genera reportes listos para análisis y toma de decisiones.
+                </p>
+                <div class="portfolio__technologies">
+                  <span class="portfolio__tech">Python</span>
+                  <span class="portfolio__tech">Pandas</span>
+                  <span class="portfolio__tech">Google Colab</span>
+                  <span class="portfolio__tech">Excel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- (Opcional) IDIOMAS -->
+        <section class="languages section" id="idiomas">
+          <h2 class="section__title">Idiomas</h2>
+          <span class="section__subtitle">Comunicación</span>
+          <ul class="skills__list" style="max-width:400px;margin:auto;">
+            <li>Español (Nativo)</li>
+            <li>Inglés (Básico)</li>
+          </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contáctame</h2>
+            <span class="section__subtitle">Ponte en contacto</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <div class="contact__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 class="contact__title">Ubicación</h3>
+                            <span class="contact__subtitle">San José de Cúcuta, Norte de Santander</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <div class="contact__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.91L12 10.09l9.455-6.269h.909c.904 0 1.636.732 1.636 1.636z"/>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">andres-bateca@hotmail.es</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <div class="contact__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 class="contact__title">WhatsApp</h3>
+                            <span class="contact__subtitle">+57 317 880 8080</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">Nombre</label>
+                            <input type="text" id="name" class="contact__input" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="contact__content">
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" id="email" class="contact__input" placeholder="tu@email.com" required>
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="project" class="contact__label">Proyecto</label>
+                        <input type="text" id="project" class="contact__input" placeholder="Nombre del proyecto">
+                    </div>
+                    <div class="contact__content">
+                        <label for="message" class="contact__label">Mensaje</label>
+                        <textarea id="message" cols="0" rows="7" class="contact__input" placeholder="Tu mensaje..." required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="button button--primary">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Andrés Ricardo Bateca</h1>
+                    <span class="footer__subtitle">Desarrollador Django</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#skills" class="footer__link">Habilidades</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://github.com/andres9119" target="_blank" class="footer__social" title="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/andres-bateca-5301b3274/" target="_blank" class="footer__social" title="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://wa.me/573178808080" target="_blank" class="footer__social" title="WhatsApp">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                        </svg>
+                    </a>
+
+                    <a href="mailto:andres-bateca@hotmail.es" class="footer__social" title="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.91L12 10.09l9.455-6.269h.909c.904 0 1.636.732 1.636 1.636z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Andrés Bateca. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </a>
+
+    <!-- Swiper JS - Removed for static grid layout -->
+    
+    <!-- Main JS -->
+    <script src="main.js"></script>
+</body>
+</html>
