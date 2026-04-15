@@ -100,10 +100,12 @@ function scrollActive(){
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
 
+        const navLinkEl = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+        if (!navLinkEl) return
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            navLinkEl.classList.add('active-link')
         }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            navLinkEl.classList.remove('active-link')
         }
     })
 }
@@ -187,7 +189,7 @@ if (typeof ScrollReveal !== 'undefined') {
     sr.reveal('.skills__content',{interval: 200}) 
 
     /*SCROLL PORTFOLIO*/
-    sr.reveal('.portfolio__img',{interval: 200}) 
+    sr.reveal('.portfolio__content', { interval: 160 }) 
 
     /*SCROLL CONTACT*/
     sr.reveal('.contact__data',{})
@@ -247,7 +249,9 @@ ${contactMessage.value}
     }
 }
 
-contactForm.addEventListener('submit', sendEmail)
+if (contactForm) {
+    contactForm.addEventListener('submit', sendEmail)
+}
 
 /*==================== NOTIFICATION SYSTEM ====================*/
 function showNotification(message, type = 'info') {

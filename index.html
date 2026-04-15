@@ -14,8 +14,8 @@
     <meta property="og:title" content="Andres Bateca - Desarrollador Django">
     <meta property="og:description" content="Desarrollador Django especializado en aplicaciones web robustas y escalables">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tu-dominio.com">
-    <meta property="og:image" content="https://tu-dominio.com/og-image.jpg">
+    <meta property="og:url" content="https://github.com/andres9119/portafolio-andres">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/136479390?v=4">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -47,10 +47,10 @@
         "name": "Andres Bateca",
         "jobTitle": "Desarrollador Django",
         "description": "Desarrollador Django especializado en aplicaciones web robustas y escalables",
-        "url": "https://tu-dominio.com",
+        "url": "https://github.com/andres9119/portafolio-andres",
         "sameAs": [
-            "https://github.com/tu-usuario",
-            "https://linkedin.com/in/tu-perfil"
+            "https://github.com/andres9119",
+            "https://www.linkedin.com/in/andres-bateca-5301b3274/"
         ]
     }
     </script>
@@ -67,9 +67,9 @@
     <!-- Header -->
     <header class="header" id="header">
         <nav class="nav container">
-            <div class="nav__logo">
-                <span class="nav__logo-text">Django Dev</span>
-            </div>
+            <a href="#home" class="nav__logo" aria-label="Inicio">
+                <span class="nav__logo-text">Andrés Bateca</span>
+            </a>
             
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -103,7 +103,7 @@
 
     <main class="main">
         <!-- Home Section -->
-        <section class="home section" id="home">
+        <section class="home section home--hero" id="home">
             <div class="home__container container grid">
                 <div class="home__content">
                     <div class="home__data">
@@ -304,18 +304,18 @@
         <!-- (Opcional) PROYECTOS DESTACADOS -->
         <section class="portfolio section" id="projects">
           <h2 class="section__title">Proyectos Destacados</h2>
-          <span class="section__subtitle">Algunos trabajos y prácticas</span>
+          <span class="section__subtitle">Sitios en producción, código abierto y análisis de datos</span>
           <div class="portfolio__container container">
-            <div class="portfolio__content django web">
-              <img src="assets/images/projects/project-1.jpg" alt="EntrenaPro - Plataforma web para gimnasio" class="portfolio__img">
+            <article class="portfolio__content django web">
+              <img src="assets/images/projects/project-1.jpg" alt="EntrenaPro - Plataforma web para gimnasio" class="portfolio__img" width="800" height="450" loading="lazy">
               <div class="portfolio__data">
                 <h3 class="portfolio__title">
                   <a href="https://entrenaprocucuta.pythonanywhere.com/" target="_blank" rel="noopener">
-                    EntrenaPro: Plataforma web para gimnasio
+                    EntrenaPro — Plataforma para gimnasio
                   </a>
                 </h3>
                 <p class="portfolio__description">
-                  Sitio web profesional para el gimnasio EntrenaPro en Cúcuta. Permite mostrar clases, planes, instructores, testimonios y blog. Incluye panel de administración, registro de usuarios y gestión de contenido. Desarrollado con Django, MySQL, HTML, CSS y JavaScript.
+                  Sitio para el gimnasio EntrenaPro (Cúcuta): clases, planes, instructores, testimonios y blog, con panel de administración y gestión de contenido.
                 </p>
                 <div class="portfolio__technologies">
                   <span class="portfolio__tech">Django</span>
@@ -324,35 +324,87 @@
                   <span class="portfolio__tech">CSS</span>
                   <span class="portfolio__tech">JavaScript</span>
                 </div>
+                <div class="portfolio__buttons">
+                  <a href="https://entrenaprocucuta.pythonanywhere.com/" class="button button--small button--secondary" target="_blank" rel="noopener">Ver sitio</a>
+                </div>
               </div>
-            </div>
-            <div class="portfolio__content api">
-              <img src="assets/images/projects/project-2.jpg" alt="Portafolio profesional Django" class="portfolio__img">
+            </article>
+            <article class="portfolio__content web">
+              <img src="assets/images/projects/project-2.jpg" alt="Tienda virtual Heilyn Aguilar — byheilynaguilar.com" class="portfolio__img" width="800" height="450" loading="lazy">
               <div class="portfolio__data">
                 <h3 class="portfolio__title">
-                  Portafolio profesional como Desarrollador Django
+                  <a href="https://byheilynaguilar.com/" target="_blank" rel="noopener">
+                    Heilyn Aguilar — Tienda virtual
+                  </a>
                 </h3>
                 <p class="portfolio__description">
-                  Este portafolio web moderno y responsivo, desarrollado desde cero, presenta mi perfil profesional, stack tecnológico, experiencia, proyectos y contacto. Incluye modo oscuro, animaciones, validación de formularios, accesibilidad y es instalable como PWA.
+                  Tienda de moda para dama en Cúcuta con envíos nacionales: catálogo por categorías, filtros, bolsa de compra y experiencia mobile-first. En producción en <strong>byheilynaguilar.com</strong>.
                 </p>
                 <div class="portfolio__technologies">
                   <span class="portfolio__tech">HTML</span>
                   <span class="portfolio__tech">CSS</span>
                   <span class="portfolio__tech">JavaScript</span>
-                  <span class="portfolio__tech">PWA</span>
+                </div>
+                <div class="portfolio__buttons">
+                  <a href="https://byheilynaguilar.com/" class="button button--small button--primary" target="_blank" rel="noopener">Ver sitio</a>
+                  <a href="https://github.com/andres9119/heilynAguilar" class="button button--small button--secondary" target="_blank" rel="noopener">Código en GitHub</a>
                 </div>
               </div>
-            </div>
-            <div class="portfolio__content django web">
-              <img src="assets/images/projects/project-3.jpg" alt="Script de depuración y análisis de datos en Pandas" class="portfolio__img">
+            </article>
+            <article class="portfolio__content web">
+              <img src="assets/images/projects/project-4.jpg" alt="Heilyn Aguilar Store — catálogo y checkout" class="portfolio__img" width="800" height="450" loading="lazy">
               <div class="portfolio__data">
                 <h3 class="portfolio__title">
-                  <a href="https://colab.research.google.com/drive/1o3rNSeGYhacMbCU2n53rdCdgyV-It2C9?usp=sharing" target="_blank" rel="noopener">
-                    Script de depuración y análisis de datos en Pandas (Salud Norte de Santander)
+                  <a href="https://byheilynaguilar.com/" target="_blank" rel="noopener">
+                    Tienda Heilyn — Catálogo y bolsa
                   </a>
                 </h3>
                 <p class="portfolio__description">
-                  Script en Google Colab para la Secretaría de Salud de Norte de Santander. Automatiza la depuración, filtrado y consolidación de registros en archivos Excel, aplicando reglas de negocio y criterios avanzados para identificar duplicados y priorizar información relevante. Genera reportes listos para análisis y toma de decisiones.
+                  Módulo de catálogo, filtros por categoría/talla/precio y flujo de pedido; mismo sitio en producción que integra la marca Heilyn Aguilar Store.
+                </p>
+                <div class="portfolio__technologies">
+                  <span class="portfolio__tech">HTML</span>
+                  <span class="portfolio__tech">CSS</span>
+                  <span class="portfolio__tech">JavaScript</span>
+                </div>
+                <div class="portfolio__buttons">
+                  <a href="https://byheilynaguilar.com/" class="button button--small button--primary" target="_blank" rel="noopener">Ver sitio</a>
+                  <a href="https://github.com/andres9119/tienda_heilyn" class="button button--small button--secondary" target="_blank" rel="noopener">Código en GitHub</a>
+                </div>
+              </div>
+            </article>
+            <article class="portfolio__content web">
+              <img src="assets/images/projects/project-5.jpg" alt="Caficultura Suárez — caficulturasuarez.com" class="portfolio__img" width="800" height="450" loading="lazy">
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  <a href="https://caficulturasuarez.com/" target="_blank" rel="noopener">
+                    Caficultura Suárez — Portal del territorio
+                  </a>
+                </h3>
+                <p class="portfolio__description">
+                  Portal sobre Suárez (Cauca): cultura cafetera, comunidades, productos, turismo rural e identidad del norte del Cauca. Desplegado en producción en <strong>caficulturasuarez.com</strong> (código en el repo IONOS).
+                </p>
+                <div class="portfolio__technologies">
+                  <span class="portfolio__tech">HTML</span>
+                  <span class="portfolio__tech">CSS</span>
+                  <span class="portfolio__tech">JavaScript</span>
+                </div>
+                <div class="portfolio__buttons">
+                  <a href="https://caficulturasuarez.com/" class="button button--small button--primary" target="_blank" rel="noopener">Ver sitio</a>
+                  <a href="https://github.com/andres9119/suarez-ionos" class="button button--small button--secondary" target="_blank" rel="noopener">Código en GitHub</a>
+                </div>
+              </div>
+            </article>
+            <article class="portfolio__content api">
+              <img src="assets/images/projects/project-3.jpg" alt="Análisis de datos con Pandas en Colab" class="portfolio__img" width="800" height="450" loading="lazy">
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  <a href="https://colab.research.google.com/drive/1o3rNSeGYhacMbCU2n53rdCdgyV-It2C9?usp=sharing" target="_blank" rel="noopener">
+                    Depuración y análisis con Pandas — Secretaría de Salud
+                  </a>
+                </h3>
+                <p class="portfolio__description">
+                  Notebook en Google Colab para Norte de Santander: depuración y consolidación de Excel, reglas de negocio, duplicados y reportes para decisión.
                 </p>
                 <div class="portfolio__technologies">
                   <span class="portfolio__tech">Python</span>
@@ -360,8 +412,11 @@
                   <span class="portfolio__tech">Google Colab</span>
                   <span class="portfolio__tech">Excel</span>
                 </div>
+                <div class="portfolio__buttons">
+                  <a href="https://colab.research.google.com/drive/1o3rNSeGYhacMbCU2n53rdCdgyV-It2C9?usp=sharing" class="button button--small button--secondary" target="_blank" rel="noopener">Abrir en Colab</a>
+                </div>
               </div>
-            </div>
+            </article>
           </div>
         </section>
 

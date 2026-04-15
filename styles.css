@@ -6,7 +6,7 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --hue-color: 230;
+  --hue-color: 239;
 
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -125,6 +125,13 @@ img {
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 1rem 0 2rem;
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    scroll-margin-top: calc(var(--header-height) + 2rem);
+  }
 }
 
 .section__title {
@@ -187,9 +194,14 @@ img {
   transition: color var(--transition-fast);
 }
 
+a.nav__logo {
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav__logo:hover {
   color: var(--first-color);
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .nav__toggle {
@@ -295,6 +307,34 @@ img {
 }
 
 /*==================== HOME ====================*/
+.home--hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.home--hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 20%, hsla(var(--hue-color), 69%, 61%, 0.14), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 85% 75%, hsla(var(--hue-color), 57%, 53%, 0.1), transparent 50%),
+    radial-gradient(circle at 50% 100%, hsla(var(--hue-color), 92%, 85%, 0.35), transparent 45%);
+}
+
+[data-theme="dark"] .home--hero::before {
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 20%, hsla(var(--hue-color), 69%, 50%, 0.18), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 85% 75%, hsla(var(--hue-color), 57%, 45%, 0.12), transparent 50%);
+}
+
+.home--hero .home__container {
+  position: relative;
+  z-index: 1;
+}
+
 .home__container {
   gap: 1rem;
 }
@@ -786,8 +826,8 @@ img {
 .portfolio__container {
   overflow: initial;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 1.75rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -883,7 +923,12 @@ img {
   gap: 0.5rem;
   flex-wrap: wrap;
   margin-top: auto;
+  padding-top: 0.5rem;
   justify-content: flex-start;
+}
+
+.portfolio__buttons .button--small {
+  margin-top: 0;
 }
 
 .swiper-container .swiper-pagination-bullet {
@@ -1183,7 +1228,7 @@ img {
   }
 
   .portfolio__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
     gap: 1.5rem;
   }
 }
@@ -1292,7 +1337,7 @@ img {
   }
 
   .portfolio__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
     gap: 2rem;
   }
 
@@ -1336,7 +1381,7 @@ img {
   }
 
   .portfolio__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
     gap: 2rem;
   }
 
@@ -1889,6 +1934,14 @@ img {
   padding: 1em 1.5em 1.5em 1.5em;
   max-height: 500px;
   transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+
+[data-theme="dark"] .accordion-content {
+  background: hsl(var(--hue-color), 26%, 14%);
+}
+
+[data-theme="dark"] .accordion-header[aria-expanded="true"] {
+  background: hsla(var(--hue-color), 69%, 50%, 0.12);
 }
 
 @media (max-width: 600px) {
