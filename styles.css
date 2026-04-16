@@ -108,9 +108,9 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   background-image: radial-gradient(circle at 1px 1px, var(--dot-pattern) 1px, transparent 0);
-  background-size: 32px 32px;
+  background-size: 28px 28px;
   color: var(--text-color);
-  line-height: 1.65;
+  line-height: 1.58;
   transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
@@ -141,13 +141,13 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-  padding: 1rem 0 2rem;
-  scroll-margin-top: calc(var(--header-height) + 1rem);
+  padding: 0.65rem 0 1.35rem;
+  scroll-margin-top: calc(var(--header-height) + 0.5rem);
 }
 
 @media screen and (min-width: 768px) {
   .section {
-    scroll-margin-top: calc(var(--header-height) + 2rem);
+    scroll-margin-top: calc(var(--header-height) + 1rem);
   }
 }
 
@@ -156,7 +156,7 @@ img {
   font-size: var(--h1-font-size);
   color: var(--title-color);
   font-weight: 700;
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: 0.35rem;
   letter-spacing: -0.025em;
   line-height: 1.15;
   position: relative;
@@ -165,9 +165,9 @@ img {
 .section__title::after {
   content: '';
   display: block;
-  width: 2.75rem;
+  width: 2.5rem;
   height: 3px;
-  margin: 0.85rem auto 0;
+  margin: 0.45rem auto 0;
   border-radius: 999px;
   background: var(--gradient-accent);
   opacity: 0.95;
@@ -176,13 +176,13 @@ img {
 .section__subtitle {
   display: block;
   font-size: clamp(0.875rem, 2.4vw, 1rem);
-  margin-bottom: 2.35rem;
+  margin-bottom: 1.25rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 34rem;
   color: var(--text-color-light);
   font-weight: 500;
-  line-height: 1.55;
+  line-height: 1.45;
   letter-spacing: 0.01em;
 }
 
@@ -200,7 +200,7 @@ img {
 
 .grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.1rem;
 }
 
 .header {
@@ -262,6 +262,11 @@ a.nav__logo:focus-visible {
   transition: transform var(--transition-normal);
 }
 
+.languages__list {
+  max-width: 400px;
+  margin: 0.35rem auto 0;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -269,7 +274,7 @@ a.nav__logo:focus-visible {
     left: 0;
     width: 100%;
     background-color: var(--body-color);
-    padding: 2rem 1.5rem 4rem;
+    padding: 1.5rem 1.25rem 3.25rem;
     box-shadow: var(--shadow-heavy);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
@@ -277,10 +282,10 @@ a.nav__logo:focus-visible {
   }
 }
 
-.nav__list {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
+  .nav__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
 
 .nav__link {
   display: flex;
@@ -396,15 +401,15 @@ a.nav__logo:focus-visible {
 
 .home__content {
   grid-template-columns: 0.5fr 3fr;
-  padding-top: 3.5rem;
+  padding-top: 2.25rem;
   align-items: center;
 }
 
 .home__social {
   display: grid;
   grid-template-columns: max-content;
-  row-gap: 1rem;
-  margin-top: -2rem;
+  row-gap: 0.65rem;
+  margin-top: -1rem;
   align-self: start;
 }
 
@@ -461,8 +466,9 @@ a.nav__logo:focus-visible {
 }
 
 .home__description {
-  margin-bottom: var(--mb-2);
-  line-height: 1.8;
+  margin-bottom: var(--mb-1-5);
+  line-height: 1.65;
+  max-width: 36rem;
 }
 
 .home__scroll {
@@ -584,7 +590,7 @@ a.nav__logo:focus-visible {
 
 /*==================== ABOUT ====================*/
 .about {
-  padding-top: 0.5rem;
+  padding-top: 0;
 }
 
 .about__img {
@@ -637,8 +643,8 @@ a.nav__logo:focus-visible {
 
 .about__description {
   text-align: center;
-  margin-bottom: var(--mb-2);
-  line-height: 1.8;
+  margin-bottom: var(--mb-1-5);
+  line-height: 1.65;
 }
 
 .about__info {
@@ -677,7 +683,7 @@ a.nav__logo:focus-visible {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: 2rem;
+  gap: 1.15rem;
   flex-wrap: nowrap;
 }
 
@@ -685,7 +691,7 @@ a.nav__logo:focus-visible {
   .stack-groups-grid {
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 }
 .stack-group-card {
@@ -693,13 +699,13 @@ a.nav__logo:focus-visible {
   border-radius: var(--radius-lg);
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
   border: 1px solid var(--border-subtle);
-  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.35rem 1.15rem 1.15rem 1.15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   min-width: 220px;
-  min-height: 220px;
+  min-height: 188px;
   max-width: 340px;
   width: 100%;
   transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
@@ -708,15 +714,15 @@ a.nav__logo:focus-visible {
 }
 .stack-group-card h3 {
   color: var(--first-color);
-  font-size: 1.18rem;
+  font-size: 1.08rem;
   font-weight: 700;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.75rem;
   text-align: center;
   letter-spacing: 0.5px;
 }
 .stack-group-card .stack-logos {
   justify-content: center;
-  gap: 1.1rem;
+  gap: 0.85rem;
   margin-bottom: 0;
 }
 .stack-group-card:hover {
@@ -729,21 +735,22 @@ a.nav__logo:focus-visible {
 @media (max-width: 1100px) {
   .stack-groups-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
     max-width: 740px;
   }
 }
 @media (max-width: 700px) {
   .stack-groups-grid {
     grid-template-columns: 1fr;
-    gap: 1.2rem;
+    gap: 0.85rem;
     max-width: 98vw;
   }
   .stack-group-card {
     min-width: 0;
     max-width: 98vw;
     width: 100%;
-    padding: 1.2rem 0.7rem 1rem 0.7rem;
+    padding: 1rem 0.65rem 0.85rem 0.65rem;
+    min-height: 0;
   }
 }
 
@@ -906,13 +913,13 @@ a.nav__logo:focus-visible {
   overflow: initial;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
-  gap: 1.75rem;
+  gap: 1.15rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .portfolio__content {
-  padding: 1.5rem;
+  padding: 1.1rem;
   position: relative;
   background: var(--container-color);
   border-radius: var(--radius-lg);
@@ -935,7 +942,7 @@ a.nav__logo:focus-visible {
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   overflow: hidden;
   box-shadow: var(--shadow-light);
   background: var(--input-color);
@@ -965,7 +972,7 @@ a.nav__logo:focus-visible {
 .portfolio__data {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.65rem;
   max-width: 100%;
   height: 100%;
   flex: 1;
@@ -997,8 +1004,8 @@ a.nav__logo:focus-visible {
 }
 
 .portfolio__description {
-  margin-bottom: var(--mb-0-75);
-  line-height: 1.7;
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
   max-width: 100%;
   text-align: left;
   font-size: var(--normal-font-size);
@@ -1008,9 +1015,9 @@ a.nav__logo:focus-visible {
 .portfolio__technologies {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: var(--mb-1);
-  margin-top: var(--mb-0-5);
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+  margin-top: 0.15rem;
 }
 
 .portfolio__tech {
@@ -1030,10 +1037,10 @@ a.nav__logo:focus-visible {
 
 .portfolio__buttons {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.45rem;
   flex-wrap: wrap;
   margin-top: auto;
-  padding-top: 0.5rem;
+  padding-top: 0.35rem;
   justify-content: flex-start;
 }
 
@@ -1087,14 +1094,14 @@ a.nav__logo:focus-visible {
 
 /*==================== CONTACT ====================*/
 .contact__container {
-  row-gap: 2.5rem;
+  row-gap: 1.5rem;
 }
 
 .contact__information {
   display: flex;
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
   align-items: center;
-  padding: 1rem;
+  padding: 0.65rem 0.75rem;
   border-radius: .5rem;
   transition: all var(--transition-normal);
 }
@@ -1122,7 +1129,7 @@ a.nav__logo:focus-visible {
 
 .contact__content {
   position: relative;
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: var(--mb-0-5);
 }
 
 .contact__label {
@@ -1173,16 +1180,16 @@ a.nav__logo:focus-visible {
 
 /*==================== FOOTER ====================*/
 .footer {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .footer__container {
-  row-gap: 3.5rem;
+  row-gap: 2rem;
 }
 
 .footer__bg {
   background: var(--gradient-footer);
-  padding: 2rem 0 2.5rem;
+  padding: 1.5rem 0 1.75rem;
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   box-shadow: 0 -12px 40px rgba(15, 23, 42, 0.12);
 }
@@ -1232,7 +1239,7 @@ a.nav__logo:focus-visible {
   font-size: var(--smaller-font-size);
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
-  margin-top: var(--mb-3);
+  margin-top: var(--mb-2);
 }
 
 .footer__title,
@@ -1300,7 +1307,7 @@ a.nav__logo:focus-visible {
   }
 
   .nav__menu {
-    padding: 2rem .25rem 4rem;
+    padding: 1.25rem .25rem 3rem;
   }
 
   .nav__list {
@@ -1357,7 +1364,7 @@ a.nav__logo:focus-visible {
 
   .portfolio__container {
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-    gap: 1.5rem;
+    gap: 1.1rem;
   }
 }
 
@@ -1373,11 +1380,11 @@ a.nav__logo:focus-visible {
   }
 
   .section {
-    padding: 3rem 0 2rem;
+    padding: 1.75rem 0 1.35rem;
   }
 
   .section__subtitle {
-    margin-bottom: 3.25rem;
+    margin-bottom: 1.5rem;
   }
 
   .header {
@@ -1406,7 +1413,7 @@ a.nav__logo:focus-visible {
 
   .nav__list {
     display: flex;
-    column-gap: 2rem;
+    column-gap: 1.35rem;
   }
 
   .nav__menu {
@@ -1418,12 +1425,12 @@ a.nav__logo:focus-visible {
   }
 
   .home__container {
-    row-gap: 5rem;
+    row-gap: 2.25rem;
   }
 
   .home__content {
-    padding-top: 5.5rem;
-    column-gap: 2rem;
+    padding-top: 4rem;
+    column-gap: 1.5rem;
   }
 
   .home__blob {
@@ -1439,7 +1446,7 @@ a.nav__logo:focus-visible {
   }
 
   .about__container {
-    column-gap: 5rem;
+    column-gap: 2.5rem;
   }
 
   .about__img {
@@ -1468,15 +1475,15 @@ a.nav__logo:focus-visible {
 
   .portfolio__container {
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
-    gap: 2rem;
+    gap: 1.35rem;
   }
 
   .footer__container {
-    column-gap: 3rem;
+    column-gap: 2rem;
   }
 
   .footer__bg {
-    padding: 3rem 0 3.5rem;
+    padding: 2rem 0 2.25rem;
   }
 
   .footer__links {
@@ -1512,7 +1519,7 @@ a.nav__logo:focus-visible {
 
   .portfolio__container {
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
-    gap: 2rem;
+    gap: 1.35rem;
   }
 
   .swiper-portfolio-icon {
@@ -1720,7 +1727,7 @@ a.nav__logo:focus-visible {
 .stack-logos {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
   overflow: visible;
@@ -1786,14 +1793,14 @@ a.nav__logo:focus-visible {
 .experience__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.15rem;
   justify-content: center;
 }
 .experience__item {
   background: var(--container-color);
   border-radius: var(--radius-lg);
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.35rem 1.2rem 1.15rem 1.2rem;
   min-width: 270px;
   max-width: 370px;
   flex: 1 1 320px;
@@ -1823,7 +1830,7 @@ a.nav__logo:focus-visible {
   font-weight: 400;
 }
 .experience__item ul {
-  margin: 0.5rem 0 1.2rem 1.2rem;
+  margin: 0.35rem 0 0.65rem 1.1rem;
   padding: 0;
   list-style: disc inside;
   color: var(--text-color);
@@ -1834,15 +1841,15 @@ a.nav__logo:focus-visible {
 .education__list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  margin: 1.2rem 0 0 0;
+  gap: 0.65rem;
+  margin: 0.65rem 0 0 0;
   padding: 0;
 }
 .education__list li {
   background: var(--container-color);
   border-radius: 0.9rem;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-  padding: 1.1rem 1.3rem;
+  padding: 0.85rem 1rem;
   border: 1.5px solid rgba(80,80,80,0.07);
   font-size: 1em;
   color: var(--text-color);
@@ -1862,10 +1869,10 @@ a.nav__logo:focus-visible {
 .skills__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem;
+  gap: 0.55rem;
   justify-content: center;
-  margin-top: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-top: 0.65rem;
+  margin-bottom: 0.65rem;
   padding: 0;
 }
 .skills__list li {
@@ -1891,7 +1898,7 @@ a.nav__logo:focus-visible {
 @media (max-width: 900px) {
   .experience__container {
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 0.85rem;
     align-items: center;
   }
   .experience__item {
@@ -1914,10 +1921,10 @@ a.nav__logo:focus-visible {
 .stack-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-  gap: 2rem;
+  gap: 1.15rem;
   justify-items: center;
   align-items: center;
-  margin: 2.5rem 0 1.5rem 0;
+  margin: 1.15rem 0 0.85rem 0;
 }
 .tech-card {
   background: var(--container-color);
@@ -2003,9 +2010,9 @@ a.nav__logo:focus-visible {
 .skills__chips-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.65rem;
   justify-content: center;
-  margin: 2rem auto 0 auto;
+  margin: 0.85rem auto 0 auto;
   max-width: 800px;
 }
 .skill-chip {
@@ -2031,14 +2038,14 @@ a.nav__logo:focus-visible {
 .accordion {
   width: 100%;
   max-width: 700px;
-  margin: 2rem auto 0 auto;
+  margin: 0.75rem auto 0 auto;
 }
 .accordion-item {
   border-radius: var(--radius-md);
   background: var(--container-color);
   border: 1px solid var(--border-subtle);
   box-shadow: 0 2px 12px rgba(15, 23, 42, 0.05);
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.75rem;
   overflow: hidden;
 }
 .accordion-header {
@@ -2047,10 +2054,10 @@ a.nav__logo:focus-visible {
   background: none;
   border: none;
   outline: none;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   font-family: var(--font-heading);
   font-weight: 600;
-  padding: 1.1em 1.5em;
+  padding: 0.85em 1.15em;
   cursor: pointer;
   color: var(--first-color);
   transition: background 0.2s;
@@ -2070,7 +2077,7 @@ a.nav__logo:focus-visible {
   padding: 0 1.5em;
 }
 .accordion-content.open {
-  padding: 1em 1.5em 1.5em 1.5em;
+  padding: 0.65em 1.15em 1em 1.15em;
   max-height: 500px;
   transition: max-height 0.5s cubic-bezier(0.4,0,0.2,1);
 }
